@@ -32,6 +32,7 @@ extensions = [
     'sphinx.ext.doctest',
     'sphinx.ext.todo',
     'sphinx.ext.coverage',
+    'sphinx.ext.graphviz',
     'extensions.src_role',
     'sphinxcontrib.httpdomain',
     'sphinxcontrib.jquery',
@@ -243,3 +244,6 @@ nitpick_ignore = [
     ('http:obj', 'array|null'),
     ('http:obj', 'int|null'),
 ]
+
+# Graphviz configuration
+graphviz_output_format = 'svg'

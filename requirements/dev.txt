@@ -345,3 +345,5 @@ pytest-split==0.9.0 \
 pytest-reportlog==0.4.0 \
     --hash=sha256:5db4d00586546d8c6b95c66466629f1e913440c36d97795a673d2e19c5cedd5c \
     --hash=sha256:c9f2079504ee51f776d3118dcf5e4730f163d3dcf26ebc8f600c1fa307bf638c
+pygraphviz==1.13 \
+    --hash=sha256:6ad8aa2f26768830a5a1cfc8a14f022d13df170a8f6fdfd68fd1aa1267000964

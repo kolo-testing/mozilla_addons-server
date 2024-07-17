@@ -29,6 +29,7 @@ docker/artifacts/*
 docs/_gh-pages
 docs/api/_build
 docs/_build
+docs/dot_files
 local_settings.py
 logs/*
 MANIFEST
