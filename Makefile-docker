@@ -61,9 +61,6 @@ update_assets:
 	# Collect static files: This MUST be run last or files will be missing
 	$(PYTHON_COMMAND) manage.py collectstatic --noinput
 
-.PHONY: update
-update: update_assets ## update the dependencies, the database, and assets
-
 .PHONY: setup-ui-tests
 setup-ui-tests:
 	rm -rf ./user-media/* ./tmp/*
