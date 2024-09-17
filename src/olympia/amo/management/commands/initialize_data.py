@@ -39,10 +39,15 @@ def retry_with_backoff(retries=3, backoff_in_seconds=1):
 
 
 class Command(BaseCommand):
-    """Based on django_extension's reset_db command but simplifed and with
-    support for all character sets defined in settings."""
+    """
+    Creates the database for this project.
 
-    help = 'Creates the database for this project.'
+    This command is idempotent and will not re-create the database if it already exists.
+    It will also not re-seed the database or reindex the data
+    if the database already exists.
+    """
+
+    help = 'Creates, seeds, and indexes the database for this project.'
     connection = None
     db_info = None
     db_exists = False
