@@ -57,7 +57,7 @@ By following these practices, developers can manage data effectively in the **ad
 
 - **Hard Reset Database**:
 
-In order to manually re-initialize the databse you can run the command with the `--foce` argument. This will delete the existing data. This will force recreate the database, seed it, and reindex.
+In order to manually re-initialize the databse you can run the command with the `--force` argument. This will delete the existing data. This will force recreate the database, seed it, and reindex.
 
 ```bash
 make initialize_data INIT_FORCE_DB=true
