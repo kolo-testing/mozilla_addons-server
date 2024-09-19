@@ -57,6 +57,9 @@ class Command(BaseCommand):
     def __init__(self, *args, **options):
         super().__init__(*args, **options)
 
+        if not settings.DEBUG:
+            raise CommandError('You can only run this command with your DEBUG setting set to True.')
+
         self.db_info = settings.DATABASES.get('default')
         self.connection = self.connect_to_db()
         self.db_exists = self.check_db_exists()
